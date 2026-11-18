@@ -2,7 +2,7 @@
 
 ## Observable MVP objective
 
-A user can enter a budget, number of people, and preferences; receive a plan of 3–5 meals; see ingredients and estimated prices; and receive a shopping recommendation that stays within the budget or explains how to adjust it.
+A user can enter a weekly budget, number of people, 1–7 planning days, and one or more meal types (breakfast, lunch, dinner); receive a weekly plan for every selected day/type occasion (up to 21); see ingredients and estimated prices; and receive a shopping recommendation that stays within budget or explains how to adjust it. Recipes may repeat when the selected number of occasions exceeds the reviewed catalog; repetition must be visible.
 
 ## MVP scope
 
@@ -10,8 +10,8 @@ A user can enter a budget, number of people, and preferences; receive a plan of 
 |---|---|
 | Costa Rica | Delivery |
 | 2–3 supermarkets | Direct purchasing from the application |
-| Lunch and dinner | Complex login |
-| 3–5 recipes | Advanced user personalization |
+| Breakfast, lunch and dinner | Complex login |
+| 1–7 days/week; choose one or more of up to three meal occasions/day | Advanced user personalization |
 | Budget in Costa Rican colones | All supermarkets in Costa Rica |
 | Number of people | Guaranteed real-time prices |
 | Simple preferences/restrictions | Real-time inventory |
@@ -26,9 +26,9 @@ A user can enter a budget, number of people, and preferences; receive a plan of 
 |---|---|
 | FR-01 | The user can enter a budget. |
 | FR-02 | The user can specify the number of people. |
-| FR-03 | The user can select the number of meals. |
+| FR-03 | The user can select 1–7 days per week and one or more meal types from breakfast, lunch and dinner; each selected type is planned on each selected day (maximum 21 occasions). |
 | FR-04 | The user can specify preferences/restrictions. |
-| FR-05 | The system generates 3–5 recipes. |
+| FR-05 | The system assigns a recipe to each selected weekly occasion; repeated recipes are allowed when catalog coverage requires them and are shown clearly. |
 | FR-06 | Each recipe displays ingredients and quantities. |
 | FR-07 | The system generates a consolidated shopping list. |
 | FR-08 | The shopping list displays prices obtained through web scraping. |
@@ -45,11 +45,11 @@ Home → Set Budget & Preferences (# of Meals) → Generate Meal Plan → Review
 
 ### Budget
 
-**Given** a user enters ₡25,000, **when** they generate a meal plan, **then** the application calculates the estimated total and compares it against ₡25,000.
+**Given** a user enters ₡25,000 and selects days and meal types, **when** they generate a weekly plan, **then** the application calculates the full-package weekly checkout estimate and compares it against ₡25,000.
 
 ### Meal plan
 
-**Given** the user requests 5 meals, **then** the application returns a plan containing 3–5 realistic recipes.
+**Given** the user selects 4 days and breakfast plus dinner, **then** the plan contains 8 meal occasions, with one recipe assigned to each occasion.
 
 ### Shopping list
 
@@ -61,7 +61,6 @@ Home → Set Budget & Preferences (# of Meals) → Generate Meal Plan → Review
 
 ## Open questions for planning
 
-- The definition uses “number of meals,” lunch and dinner, 3–5 recipes, and an example requesting five meals. Their exact relationship is not specified; confirm it before treating the meal count as a precise acceptance test.
 - “Realistic recipes” is not given a measurable definition.
 - Appliance availability appears in the problem description, but is not included in the objective, MVP list, or functional requirements. Its status is unresolved.
 - The objective says optimize the shopping list to stay within budget; the specified requirement when over budget is to offer substitutions. The optimization method and expected result are not defined.
