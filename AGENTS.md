@@ -15,6 +15,7 @@ The product definition is documented in [docs/product-context.md](docs/product-c
 - docs/architecture.md — architecture and design.
 - docs/plans/ — a plan location named by the supplied structure; the directory and an approved plan are not present yet.
 - docs/decisions/ — a decision-record location named by the supplied structure; the directory and an ADR are not present yet.
+- .agents/skills/: team skills for Codex.
 
 The supplied monorepo example also names package.json, bun.lock, apps/web, apps/api, and packages/contracts. These are not present in the repository and have not been initialized by this documentation task.
 
@@ -37,5 +38,6 @@ No package manifest, lockfile, application source, or validation scripts are pre
 - Clarify how the requested meal count relates to lunch and dinner and to the requirement to return 3–5 recipes, including when a user requests five meals.
 - Clarify whether appliance availability is an input or requirement; it appears in the described current process but not in the objective or functional requirements.
 - Confirm how the budget objective is evaluated when estimated prices make the total exceed budget; the definition calls for suggestions/substitutions but does not define an optimization method.
+- Use the corresponding skills in .agents/skills/: set-up-and-validate-monorepo, create-feature-plan, record-adr, pr-code-review, pr-triage y create-pr.
 
 Do not add technical components, data sources, or product requirements while these questions are unresolved. Update this context when the team explicitly approves decisions or when setup commands become verifiable.
