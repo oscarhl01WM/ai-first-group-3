@@ -1,0 +1,516 @@
+{
+  "isSynthetic": true,
+  "recipes": [
+    {
+      "id": "gallo-pinto",
+      "name": "Gallo pinto con huevo",
+      "description": "Un clásico tico para cualquier hora.",
+      "baseServings": 2,
+      "minutes": 20,
+      "ingredients": [
+        {
+          "ingredientId": "rice",
+          "quantity": {
+            "amount": 180,
+            "unit": "g"
+          }
+        },
+        {
+          "ingredientId": "beans",
+          "quantity": {
+            "amount": 200,
+            "unit": "g"
+          }
+        },
+        {
+          "ingredientId": "egg",
+          "quantity": {
+            "amount": 2,
+            "unit": "count"
+          }
+        },
+        {
+          "ingredientId": "onion",
+          "quantity": {
+            "amount": 80,
+            "unit": "g"
+          }
+        }
+      ],
+      "versionId": "gallo-pinto-v1",
+      "reviewStatus": "mock",
+      "mealTypes": [
+        "breakfast",
+        "lunch"
+      ],
+      "dietaryTags": [
+        "vegetarian"
+      ],
+      "appliances": [
+        "stovetop"
+      ],
+      "instructions": [
+        {
+          "step": 1,
+          "text": "Cocina el arroz y calienta los frijoles."
+        },
+        {
+          "step": 2,
+          "text": "Sofríe la cebolla y mezcla con el arroz y los frijoles."
+        },
+        {
+          "step": 3,
+          "text": "Sirve con los huevos cocinados a tu gusto."
+        }
+      ]
+    },
+    {
+      "id": "pasta",
+      "name": "Pasta con tomate y queso",
+      "description": "Una comida sencilla y llena de sabor.",
+      "baseServings": 2,
+      "minutes": 25,
+      "ingredients": [
+        {
+          "ingredientId": "pasta",
+          "quantity": {
+            "amount": 200,
+            "unit": "g"
+          }
+        },
+        {
+          "ingredientId": "tomato",
+          "quantity": {
+            "amount": 250,
+            "unit": "g"
+          }
+        },
+        {
+          "ingredientId": "cheese",
+          "quantity": {
+            "amount": 80,
+            "unit": "g"
+          }
+        },
+        {
+          "ingredientId": "onion",
+          "quantity": {
+            "amount": 50,
+            "unit": "g"
+          }
+        }
+      ],
+      "versionId": "pasta-v1",
+      "reviewStatus": "mock",
+      "mealTypes": [
+        "lunch",
+        "dinner"
+      ],
+      "dietaryTags": [
+        "vegetarian"
+      ],
+      "appliances": [
+        "stovetop"
+      ],
+      "instructions": [
+        {
+          "step": 1,
+          "text": "Cocina la pasta."
+        },
+        {
+          "step": 2,
+          "text": "Sofríe la cebolla y el tomate hasta formar una salsa."
+        },
+        {
+          "step": 3,
+          "text": "Mezcla con la pasta y termina con queso."
+        }
+      ]
+    },
+    {
+      "id": "arroz-pollo",
+      "name": "Arroz con pollo y vegetales",
+      "description": "Un clásico casero para compartir.",
+      "baseServings": 2,
+      "minutes": 35,
+      "ingredients": [
+        {
+          "ingredientId": "rice",
+          "quantity": {
+            "amount": 200,
+            "unit": "g"
+          }
+        },
+        {
+          "ingredientId": "chicken",
+          "quantity": {
+            "amount": 300,
+            "unit": "g"
+          }
+        },
+        {
+          "ingredientId": "carrot",
+          "quantity": {
+            "amount": 150,
+            "unit": "g"
+          }
+        },
+        {
+          "ingredientId": "onion",
+          "quantity": {
+            "amount": 80,
+            "unit": "g"
+          }
+        }
+      ],
+      "versionId": "arroz-pollo-v1",
+      "reviewStatus": "mock",
+      "mealTypes": [
+        "lunch",
+        "dinner"
+      ],
+      "dietaryTags": [
+
+      ],
+      "appliances": [
+        "stovetop"
+      ],
+      "instructions": [
+        {
+          "step": 1,
+          "text": "Cocina el arroz."
+        },
+        {
+          "step": 2,
+          "text": "Cocina el pollo y los vegetales en una sartén."
+        },
+        {
+          "step": 3,
+          "text": "Mezcla todo y cocina unos minutos más."
+        }
+      ]
+    },
+    {
+      "id": "casado",
+      "name": "Casado de pollo",
+      "description": "Un plato completo inspirado en el sabor tico.",
+      "baseServings": 2,
+      "minutes": 40,
+      "ingredients": [
+        {
+          "ingredientId": "rice",
+          "quantity": {
+            "amount": 180,
+            "unit": "g"
+          }
+        },
+        {
+          "ingredientId": "beans",
+          "quantity": {
+            "amount": 200,
+            "unit": "g"
+          }
+        },
+        {
+          "ingredientId": "chicken",
+          "quantity": {
+            "amount": 300,
+            "unit": "g"
+          }
+        },
+        {
+          "ingredientId": "carrot",
+          "quantity": {
+            "amount": 150,
+            "unit": "g"
+          }
+        }
+      ],
+      "versionId": "casado-v1",
+      "reviewStatus": "mock",
+      "mealTypes": [
+        "lunch",
+        "dinner"
+      ],
+      "dietaryTags": [
+
+      ],
+      "appliances": [
+        "stovetop"
+      ],
+      "instructions": [
+        {
+          "step": 1,
+          "text": "Cocina el arroz y calienta los frijoles."
+        },
+        {
+          "step": 2,
+          "text": "Cocina el pollo hasta que esté bien cocido."
+        },
+        {
+          "step": 3,
+          "text": "Sirve con la zanahoria preparada a tu gusto."
+        }
+      ]
+    },
+    {
+      "id": "picadillo",
+      "name": "Picadillo de papa y huevo",
+      "description": "Reconfortante y fácil de preparar.",
+      "baseServings": 2,
+      "minutes": 30,
+      "ingredients": [
+        {
+          "ingredientId": "potato",
+          "quantity": {
+            "amount": 400,
+            "unit": "g"
+          }
+        },
+        {
+          "ingredientId": "egg",
+          "quantity": {
+            "amount": 2,
+            "unit": "count"
+          }
+        },
+        {
+          "ingredientId": "onion",
+          "quantity": {
+            "amount": 80,
+            "unit": "g"
+          }
+        },
+        {
+          "ingredientId": "tomato",
+          "quantity": {
+            "amount": 150,
+            "unit": "g"
+          }
+        }
+      ],
+      "versionId": "picadillo-v1",
+      "reviewStatus": "mock",
+      "mealTypes": [
+        "breakfast",
+        "lunch",
+        "dinner"
+      ],
+      "dietaryTags": [
+        "vegetarian"
+      ],
+      "appliances": [
+        "stovetop"
+      ],
+      "instructions": [
+        {
+          "step": 1,
+          "text": "Corta y cocina la papa hasta ablandar."
+        },
+        {
+          "step": 2,
+          "text": "Sofríe cebolla y tomate y agrega la papa."
+        },
+        {
+          "step": 3,
+          "text": "Sirve con huevos bien cocidos."
+        }
+      ]
+    },
+    {
+      "id": "ensalada",
+      "name": "Ensalada tibia de frijoles",
+      "description": "Fresca, colorida y rendidora.",
+      "baseServings": 2,
+      "minutes": 20,
+      "ingredients": [
+        {
+          "ingredientId": "beans",
+          "quantity": {
+            "amount": 300,
+            "unit": "g"
+          }
+        },
+        {
+          "ingredientId": "tomato",
+          "quantity": {
+            "amount": 200,
+            "unit": "g"
+          }
+        },
+        {
+          "ingredientId": "carrot",
+          "quantity": {
+            "amount": 150,
+            "unit": "g"
+          }
+        },
+        {
+          "ingredientId": "onion",
+          "quantity": {
+            "amount": 50,
+            "unit": "g"
+          }
+        }
+      ],
+      "versionId": "ensalada-v1",
+      "reviewStatus": "mock",
+      "mealTypes": [
+        "lunch",
+        "dinner"
+      ],
+      "dietaryTags": [
+        "vegan",
+        "vegetarian"
+      ],
+      "appliances": [
+        "stovetop"
+      ],
+      "instructions": [
+        {
+          "step": 1,
+          "text": "Calienta los frijoles."
+        },
+        {
+          "step": 2,
+          "text": "Corta el tomate, la zanahoria y la cebolla."
+        },
+        {
+          "step": 3,
+          "text": "Mezcla y sirve tibio."
+        }
+      ]
+    },
+    {
+      "id": "arroz-vegetales",
+      "name": "Arroz con vegetales",
+      "description": "Una opción práctica para cualquier día.",
+      "baseServings": 2,
+      "minutes": 25,
+      "ingredients": [
+        {
+          "ingredientId": "rice",
+          "quantity": {
+            "amount": 200,
+            "unit": "g"
+          }
+        },
+        {
+          "ingredientId": "carrot",
+          "quantity": {
+            "amount": 200,
+            "unit": "g"
+          }
+        },
+        {
+          "ingredientId": "onion",
+          "quantity": {
+            "amount": 80,
+            "unit": "g"
+          }
+        },
+        {
+          "ingredientId": "tomato",
+          "quantity": {
+            "amount": 150,
+            "unit": "g"
+          }
+        }
+      ],
+      "versionId": "arroz-vegetales-v1",
+      "reviewStatus": "mock",
+      "mealTypes": [
+        "breakfast",
+        "lunch",
+        "dinner"
+      ],
+      "dietaryTags": [
+        "vegan",
+        "vegetarian"
+      ],
+      "appliances": [
+        "stovetop"
+      ],
+      "instructions": [
+        {
+          "step": 1,
+          "text": "Cocina el arroz."
+        },
+        {
+          "step": 2,
+          "text": "Sofríe los vegetales picados."
+        },
+        {
+          "step": 3,
+          "text": "Mezcla y sirve caliente."
+        }
+      ]
+    },
+    {
+      "id": "papas-frijoles",
+      "name": "Papas con frijoles",
+      "description": "Ingredientes sencillos, comida deliciosa.",
+      "baseServings": 2,
+      "minutes": 30,
+      "ingredients": [
+        {
+          "ingredientId": "potato",
+          "quantity": {
+            "amount": 400,
+            "unit": "g"
+          }
+        },
+        {
+          "ingredientId": "beans",
+          "quantity": {
+            "amount": 250,
+            "unit": "g"
+          }
+        },
+        {
+          "ingredientId": "onion",
+          "quantity": {
+            "amount": 80,
+            "unit": "g"
+          }
+        },
+        {
+          "ingredientId": "tomato",
+          "quantity": {
+            "amount": 150,
+            "unit": "g"
+          }
+        }
+      ],
+      "versionId": "papas-frijoles-v1",
+      "reviewStatus": "mock",
+      "mealTypes": [
+        "lunch",
+        "dinner"
+      ],
+      "dietaryTags": [
+        "vegan",
+        "vegetarian"
+      ],
+      "appliances": [
+        "stovetop"
+      ],
+      "instructions": [
+        {
+          "step": 1,
+          "text": "Cocina las papas en cubos."
+        },
+        {
+          "step": 2,
+          "text": "Sofríe la cebolla y el tomate."
+        },
+        {
+          "step": 3,
+          "text": "Agrega los frijoles y las papas y calienta."
+        }
+      ]
+    }
+  ],
+  "schemaVersion": 1,
+  "catalogId": "munch-cr-demo-recipes"
+}

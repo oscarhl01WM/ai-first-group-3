@@ -2,7 +2,7 @@
 
 ## Objective
 
-Create an application that takes a budget, number of people, number of meals, and preferences and generates a meal plan using estimated prices from supermarkets in Costa Rica. The shopping recommendation should be optimized to stay within budget.
+Create an application that takes a weekly budget, number of people, 1–7 planning days, selected breakfast/lunch/dinner occasions, and preferences, then generates a weekly plan using estimated prices from supermarkets in Costa Rica. The shopping recommendation should be optimized to stay within budget.
 
 ## Target user
 

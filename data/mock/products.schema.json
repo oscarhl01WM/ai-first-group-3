@@ -1,0 +1,80 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://munch-cr.invalid/schemas/products-v1.json",
+  "title": "Munch CR supermarket product and price catalog v1",
+  "type": "object",
+  "required": ["schemaVersion", "catalogId", "currency", "isSynthetic", "fixtureAsOf", "ingredients", "sources", "stores", "branches", "products", "priceObservations"],
+  "properties": {
+    "schemaVersion": {"const": 1}, "catalogId": {"type": "string", "minLength": 1},
+    "currency": {"const": "CRC"}, "isSynthetic": {"type": "boolean"}, "fixtureAsOf": {"type": "string", "format": "date-time"},
+    "ingredients": {"type": "array", "items": {"$ref": "#/$defs/ingredient"}},
+    "sources": {"type": "array", "items": {"$ref": "#/$defs/source"}},
+    "stores": {"type": "array", "items": {"$ref": "#/$defs/store"}},
+    "branches": {"type": "array", "items": {"$ref": "#/$defs/branch"}},
+    "products": {"type": "array", "items": {"$ref": "#/$defs/product"}},
+    "priceObservations": {"type": "array", "items": {"$ref": "#/$defs/priceObservation"}}
+  },
+  "additionalProperties": false,
+  "$defs": {
+    "nullableId": {"type": ["string", "null"]},
+    "nullableUrl": {"type": ["string", "null"], "format": "uri"},
+    "ingredient": {
+      "type": "object", "required": ["id", "name", "canonicalUnit"],
+      "properties": {"id": {"type": "string", "minLength": 1}, "name": {"type": "string", "minLength": 1}, "canonicalUnit": {"enum": ["g", "ml", "count"]}},
+      "additionalProperties": false
+    },
+    "source": {
+      "type": "object", "required": ["id", "name", "kind", "baseUrl"],
+      "properties": {"id": {"type": "string", "minLength": 1}, "name": {"type": "string", "minLength": 1}, "kind": {"enum": ["synthetic", "manual", "approved_web_adapter"]}, "baseUrl": {"$ref": "#/$defs/nullableUrl"}},
+      "additionalProperties": false
+    },
+    "store": {
+      "type": "object", "required": ["id", "name"],
+      "properties": {"id": {"type": "string", "minLength": 1}, "name": {"type": "string", "minLength": 1}},
+      "additionalProperties": false
+    },
+    "branch": {
+      "type": "object", "required": ["id", "storeId", "name", "region"],
+      "properties": {"id": {"type": "string", "minLength": 1}, "storeId": {"type": "string", "minLength": 1}, "name": {"type": "string", "minLength": 1}, "region": {"type": ["string", "null"]}},
+      "additionalProperties": false
+    },
+    "package": {
+      "type": "object", "required": ["amount", "unit"],
+      "properties": {"amount": {"type": "number", "exclusiveMinimum": 0}, "unit": {"enum": ["g", "ml", "count"]}},
+      "additionalProperties": false
+    },
+    "product": {
+      "type": "object", "required": ["id", "storeId", "branchId", "sourceId", "externalId", "name", "ingredientId", "package", "sourceUrl", "isSynthetic", "ingredientMatchStatus"],
+      "properties": {
+        "id": {"type": "string", "minLength": 1}, "storeId": {"type": "string", "minLength": 1},
+        "branchId": {"$ref": "#/$defs/nullableId"}, "sourceId": {"type": "string", "minLength": 1},
+        "externalId": {"type": "string", "minLength": 1}, "name": {"type": "string", "minLength": 1},
+        "ingredientId": {"type": ["string", "null"], "minLength": 1}, "ingredientMatchStatus": {"enum": ["unmatched", "pending", "approved", "rejected", "mock"]},
+        "package": {"$ref": "#/$defs/package"}, "sourceUrl": {"$ref": "#/$defs/nullableUrl"}, "isSynthetic": {"type": "boolean"}
+      },
+      "additionalProperties": false
+    },
+    "promotion": {
+      "type": "object", "required": ["priceCrc", "startsAt", "endsAt", "conditions"],
+      "properties": {
+        "priceCrc": {"type": ["integer", "null"], "minimum": 1},
+        "startsAt": {"type": ["string", "null"], "format": "date-time"}, "endsAt": {"type": ["string", "null"], "format": "date-time"},
+        "conditions": {"type": ["string", "null"]}
+      },
+      "additionalProperties": false
+    },
+    "priceObservation": {
+      "type": "object", "required": ["id", "productId", "sourceId", "branchId", "capturedAt", "currency", "priceCrc", "promotion", "sourceUrl", "captureMethod", "reviewStatus", "eligibleForEstimate", "isSynthetic"],
+      "properties": {
+        "id": {"type": "string", "minLength": 1}, "productId": {"type": "string", "minLength": 1},
+        "sourceId": {"type": "string", "minLength": 1}, "branchId": {"$ref": "#/$defs/nullableId"}, "capturedAt": {"type": "string", "format": "date-time"},
+        "currency": {"const": "CRC"}, "priceCrc": {"type": "integer", "minimum": 1},
+        "promotion": {"oneOf": [{"type": "null"}, {"$ref": "#/$defs/promotion"}]},
+        "sourceUrl": {"$ref": "#/$defs/nullableUrl"}, "captureMethod": {"enum": ["synthetic", "manual", "approved_web_adapter"]},
+        "reviewStatus": {"enum": ["pending", "approved", "rejected", "mock"]},
+        "eligibleForEstimate": {"type": "boolean"}, "isSynthetic": {"type": "boolean"}
+      },
+      "additionalProperties": false
+    }
+  }
+}

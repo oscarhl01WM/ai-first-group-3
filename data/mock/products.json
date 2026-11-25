@@ -1,0 +1,1016 @@
+{
+  "schemaVersion": 1,
+  "catalogId": "munch-cr-demo-products",
+  "currency": "CRC",
+  "isSynthetic": true,
+  "fixtureAsOf": "2026-11-18T12:00:00Z",
+  "ingredients": [
+    {
+      "id": "rice",
+      "name": "Arroz",
+      "canonicalUnit": "g"
+    },
+    {
+      "id": "beans",
+      "name": "Frijoles",
+      "canonicalUnit": "g"
+    },
+    {
+      "id": "egg",
+      "name": "Huevos",
+      "canonicalUnit": "count"
+    },
+    {
+      "id": "onion",
+      "name": "Cebolla",
+      "canonicalUnit": "g"
+    },
+    {
+      "id": "pasta",
+      "name": "Pasta",
+      "canonicalUnit": "g"
+    },
+    {
+      "id": "tomato",
+      "name": "Tomate",
+      "canonicalUnit": "g"
+    },
+    {
+      "id": "cheese",
+      "name": "Queso",
+      "canonicalUnit": "g"
+    },
+    {
+      "id": "chicken",
+      "name": "Pollo",
+      "canonicalUnit": "g"
+    },
+    {
+      "id": "carrot",
+      "name": "Zanahoria",
+      "canonicalUnit": "g"
+    },
+    {
+      "id": "potato",
+      "name": "Papa",
+      "canonicalUnit": "g"
+    }
+  ],
+  "sources": [
+    {
+      "id": "mock-source-1",
+      "name": "Fuente sintética de demostración",
+      "kind": "synthetic",
+      "baseUrl": null
+    },
+    {
+      "id": "mock-source-2",
+      "name": "Fuente sintética de demostración",
+      "kind": "synthetic",
+      "baseUrl": null
+    },
+    {
+      "id": "mock-source-3",
+      "name": "Fuente sintética de demostración",
+      "kind": "synthetic",
+      "baseUrl": null
+    }
+  ],
+  "stores": [
+    {
+      "id": "mock-store-1",
+      "name": "Mercado Uno"
+    },
+    {
+      "id": "mock-store-2",
+      "name": "Mercado Dos"
+    },
+    {
+      "id": "mock-store-3",
+      "name": "Mercado Tres"
+    }
+  ],
+  "products": [
+    {
+      "id": "product-s1-rice",
+      "storeId": "mock-store-1",
+      "sourceId": "mock-source-1",
+      "externalId": "synthetic-rice",
+      "name": "Arroz (producto ficticio)",
+      "ingredientId": "rice",
+      "package": {
+        "amount": 1000,
+        "unit": "g"
+      },
+      "sourceUrl": null,
+      "isSynthetic": true,
+      "branchId": "mock-store-1-branch-1",
+      "ingredientMatchStatus": "mock"
+    },
+    {
+      "id": "product-s1-beans",
+      "storeId": "mock-store-1",
+      "sourceId": "mock-source-1",
+      "externalId": "synthetic-beans",
+      "name": "Frijoles (producto ficticio)",
+      "ingredientId": "beans",
+      "package": {
+        "amount": 400,
+        "unit": "g"
+      },
+      "sourceUrl": null,
+      "isSynthetic": true,
+      "branchId": "mock-store-1-branch-1",
+      "ingredientMatchStatus": "mock"
+    },
+    {
+      "id": "product-s1-egg",
+      "storeId": "mock-store-1",
+      "sourceId": "mock-source-1",
+      "externalId": "synthetic-egg",
+      "name": "Huevos (producto ficticio)",
+      "ingredientId": "egg",
+      "package": {
+        "amount": 6,
+        "unit": "count"
+      },
+      "sourceUrl": null,
+      "isSynthetic": true,
+      "branchId": "mock-store-1-branch-1",
+      "ingredientMatchStatus": "mock"
+    },
+    {
+      "id": "product-s1-onion",
+      "storeId": "mock-store-1",
+      "sourceId": "mock-source-1",
+      "externalId": "synthetic-onion",
+      "name": "Cebolla (producto ficticio)",
+      "ingredientId": "onion",
+      "package": {
+        "amount": 500,
+        "unit": "g"
+      },
+      "sourceUrl": null,
+      "isSynthetic": true,
+      "branchId": "mock-store-1-branch-1",
+      "ingredientMatchStatus": "mock"
+    },
+    {
+      "id": "product-s1-pasta",
+      "storeId": "mock-store-1",
+      "sourceId": "mock-source-1",
+      "externalId": "synthetic-pasta",
+      "name": "Pasta (producto ficticio)",
+      "ingredientId": "pasta",
+      "package": {
+        "amount": 500,
+        "unit": "g"
+      },
+      "sourceUrl": null,
+      "isSynthetic": true,
+      "branchId": "mock-store-1-branch-1",
+      "ingredientMatchStatus": "mock"
+    },
+    {
+      "id": "product-s1-tomato",
+      "storeId": "mock-store-1",
+      "sourceId": "mock-source-1",
+      "externalId": "synthetic-tomato",
+      "name": "Tomate (producto ficticio)",
+      "ingredientId": "tomato",
+      "package": {
+        "amount": 500,
+        "unit": "g"
+      },
+      "sourceUrl": null,
+      "isSynthetic": true,
+      "branchId": "mock-store-1-branch-1",
+      "ingredientMatchStatus": "mock"
+    },
+    {
+      "id": "product-s1-cheese",
+      "storeId": "mock-store-1",
+      "sourceId": "mock-source-1",
+      "externalId": "synthetic-cheese",
+      "name": "Queso (producto ficticio)",
+      "ingredientId": "cheese",
+      "package": {
+        "amount": 250,
+        "unit": "g"
+      },
+      "sourceUrl": null,
+      "isSynthetic": true,
+      "branchId": "mock-store-1-branch-1",
+      "ingredientMatchStatus": "mock"
+    },
+    {
+      "id": "product-s1-chicken",
+      "storeId": "mock-store-1",
+      "sourceId": "mock-source-1",
+      "externalId": "synthetic-chicken",
+      "name": "Pollo (producto ficticio)",
+      "ingredientId": "chicken",
+      "package": {
+        "amount": 500,
+        "unit": "g"
+      },
+      "sourceUrl": null,
+      "isSynthetic": true,
+      "branchId": "mock-store-1-branch-1",
+      "ingredientMatchStatus": "mock"
+    },
+    {
+      "id": "product-s1-carrot",
+      "storeId": "mock-store-1",
+      "sourceId": "mock-source-1",
+      "externalId": "synthetic-carrot",
+      "name": "Zanahoria (producto ficticio)",
+      "ingredientId": "carrot",
+      "package": {
+        "amount": 500,
+        "unit": "g"
+      },
+      "sourceUrl": null,
+      "isSynthetic": true,
+      "branchId": "mock-store-1-branch-1",
+      "ingredientMatchStatus": "mock"
+    },
+    {
+      "id": "product-s1-potato",
+      "storeId": "mock-store-1",
+      "sourceId": "mock-source-1",
+      "externalId": "synthetic-potato",
+      "name": "Papa (producto ficticio)",
+      "ingredientId": "potato",
+      "package": {
+        "amount": 1000,
+        "unit": "g"
+      },
+      "sourceUrl": null,
+      "isSynthetic": true,
+      "branchId": "mock-store-1-branch-1",
+      "ingredientMatchStatus": "mock"
+    },
+    {
+      "id": "product-s2-rice",
+      "storeId": "mock-store-2",
+      "sourceId": "mock-source-2",
+      "externalId": "synthetic-rice",
+      "name": "Arroz (producto ficticio)",
+      "ingredientId": "rice",
+      "package": {
+        "amount": 1000,
+        "unit": "g"
+      },
+      "sourceUrl": null,
+      "isSynthetic": true,
+      "branchId": "mock-store-2-branch-1",
+      "ingredientMatchStatus": "mock"
+    },
+    {
+      "id": "product-s2-beans",
+      "storeId": "mock-store-2",
+      "sourceId": "mock-source-2",
+      "externalId": "synthetic-beans",
+      "name": "Frijoles (producto ficticio)",
+      "ingredientId": "beans",
+      "package": {
+        "amount": 400,
+        "unit": "g"
+      },
+      "sourceUrl": null,
+      "isSynthetic": true,
+      "branchId": "mock-store-2-branch-1",
+      "ingredientMatchStatus": "mock"
+    },
+    {
+      "id": "product-s2-egg",
+      "storeId": "mock-store-2",
+      "sourceId": "mock-source-2",
+      "externalId": "synthetic-egg",
+      "name": "Huevos (producto ficticio)",
+      "ingredientId": "egg",
+      "package": {
+        "amount": 6,
+        "unit": "count"
+      },
+      "sourceUrl": null,
+      "isSynthetic": true,
+      "branchId": "mock-store-2-branch-1",
+      "ingredientMatchStatus": "mock"
+    },
+    {
+      "id": "product-s2-onion",
+      "storeId": "mock-store-2",
+      "sourceId": "mock-source-2",
+      "externalId": "synthetic-onion",
+      "name": "Cebolla (producto ficticio)",
+      "ingredientId": "onion",
+      "package": {
+        "amount": 500,
+        "unit": "g"
+      },
+      "sourceUrl": null,
+      "isSynthetic": true,
+      "branchId": "mock-store-2-branch-1",
+      "ingredientMatchStatus": "mock"
+    },
+    {
+      "id": "product-s2-pasta",
+      "storeId": "mock-store-2",
+      "sourceId": "mock-source-2",
+      "externalId": "synthetic-pasta",
+      "name": "Pasta (producto ficticio)",
+      "ingredientId": "pasta",
+      "package": {
+        "amount": 500,
+        "unit": "g"
+      },
+      "sourceUrl": null,
+      "isSynthetic": true,
+      "branchId": "mock-store-2-branch-1",
+      "ingredientMatchStatus": "mock"
+    },
+    {
+      "id": "product-s2-tomato",
+      "storeId": "mock-store-2",
+      "sourceId": "mock-source-2",
+      "externalId": "synthetic-tomato",
+      "name": "Tomate (producto ficticio)",
+      "ingredientId": "tomato",
+      "package": {
+        "amount": 500,
+        "unit": "g"
+      },
+      "sourceUrl": null,
+      "isSynthetic": true,
+      "branchId": "mock-store-2-branch-1",
+      "ingredientMatchStatus": "mock"
+    },
+    {
+      "id": "product-s2-cheese",
+      "storeId": "mock-store-2",
+      "sourceId": "mock-source-2",
+      "externalId": "synthetic-cheese",
+      "name": "Queso (producto ficticio)",
+      "ingredientId": "cheese",
+      "package": {
+        "amount": 250,
+        "unit": "g"
+      },
+      "sourceUrl": null,
+      "isSynthetic": true,
+      "branchId": "mock-store-2-branch-1",
+      "ingredientMatchStatus": "mock"
+    },
+    {
+      "id": "product-s2-chicken",
+      "storeId": "mock-store-2",
+      "sourceId": "mock-source-2",
+      "externalId": "synthetic-chicken",
+      "name": "Pollo (producto ficticio)",
+      "ingredientId": "chicken",
+      "package": {
+        "amount": 500,
+        "unit": "g"
+      },
+      "sourceUrl": null,
+      "isSynthetic": true,
+      "branchId": "mock-store-2-branch-1",
+      "ingredientMatchStatus": "mock"
+    },
+    {
+      "id": "product-s2-carrot",
+      "storeId": "mock-store-2",
+      "sourceId": "mock-source-2",
+      "externalId": "synthetic-carrot",
+      "name": "Zanahoria (producto ficticio)",
+      "ingredientId": "carrot",
+      "package": {
+        "amount": 500,
+        "unit": "g"
+      },
+      "sourceUrl": null,
+      "isSynthetic": true,
+      "branchId": "mock-store-2-branch-1",
+      "ingredientMatchStatus": "mock"
+    },
+    {
+      "id": "product-s2-potato",
+      "storeId": "mock-store-2",
+      "sourceId": "mock-source-2",
+      "externalId": "synthetic-potato",
+      "name": "Papa (producto ficticio)",
+      "ingredientId": "potato",
+      "package": {
+        "amount": 1000,
+        "unit": "g"
+      },
+      "sourceUrl": null,
+      "isSynthetic": true,
+      "branchId": "mock-store-2-branch-1",
+      "ingredientMatchStatus": "mock"
+    },
+    {
+      "id": "product-s3-rice",
+      "storeId": "mock-store-3",
+      "sourceId": "mock-source-3",
+      "externalId": "synthetic-rice",
+      "name": "Arroz (producto ficticio)",
+      "ingredientId": "rice",
+      "package": {
+        "amount": 1000,
+        "unit": "g"
+      },
+      "sourceUrl": null,
+      "isSynthetic": true,
+      "branchId": "mock-store-3-branch-1",
+      "ingredientMatchStatus": "mock"
+    },
+    {
+      "id": "product-s3-beans",
+      "storeId": "mock-store-3",
+      "sourceId": "mock-source-3",
+      "externalId": "synthetic-beans",
+      "name": "Frijoles (producto ficticio)",
+      "ingredientId": "beans",
+      "package": {
+        "amount": 400,
+        "unit": "g"
+      },
+      "sourceUrl": null,
+      "isSynthetic": true,
+      "branchId": "mock-store-3-branch-1",
+      "ingredientMatchStatus": "mock"
+    },
+    {
+      "id": "product-s3-egg",
+      "storeId": "mock-store-3",
+      "sourceId": "mock-source-3",
+      "externalId": "synthetic-egg",
+      "name": "Huevos (producto ficticio)",
+      "ingredientId": "egg",
+      "package": {
+        "amount": 6,
+        "unit": "count"
+      },
+      "sourceUrl": null,
+      "isSynthetic": true,
+      "branchId": "mock-store-3-branch-1",
+      "ingredientMatchStatus": "mock"
+    },
+    {
+      "id": "product-s3-onion",
+      "storeId": "mock-store-3",
+      "sourceId": "mock-source-3",
+      "externalId": "synthetic-onion",
+      "name": "Cebolla (producto ficticio)",
+      "ingredientId": "onion",
+      "package": {
+        "amount": 500,
+        "unit": "g"
+      },
+      "sourceUrl": null,
+      "isSynthetic": true,
+      "branchId": "mock-store-3-branch-1",
+      "ingredientMatchStatus": "mock"
+    },
+    {
+      "id": "product-s3-pasta",
+      "storeId": "mock-store-3",
+      "sourceId": "mock-source-3",
+      "externalId": "synthetic-pasta",
+      "name": "Pasta (producto ficticio)",
+      "ingredientId": "pasta",
+      "package": {
+        "amount": 500,
+        "unit": "g"
+      },
+      "sourceUrl": null,
+      "isSynthetic": true,
+      "branchId": "mock-store-3-branch-1",
+      "ingredientMatchStatus": "mock"
+    },
+    {
+      "id": "product-s3-tomato",
+      "storeId": "mock-store-3",
+      "sourceId": "mock-source-3",
+      "externalId": "synthetic-tomato",
+      "name": "Tomate (producto ficticio)",
+      "ingredientId": "tomato",
+      "package": {
+        "amount": 500,
+        "unit": "g"
+      },
+      "sourceUrl": null,
+      "isSynthetic": true,
+      "branchId": "mock-store-3-branch-1",
+      "ingredientMatchStatus": "mock"
+    },
+    {
+      "id": "product-s3-cheese",
+      "storeId": "mock-store-3",
+      "sourceId": "mock-source-3",
+      "externalId": "synthetic-cheese",
+      "name": "Queso (producto ficticio)",
+      "ingredientId": "cheese",
+      "package": {
+        "amount": 250,
+        "unit": "g"
+      },
+      "sourceUrl": null,
+      "isSynthetic": true,
+      "branchId": "mock-store-3-branch-1",
+      "ingredientMatchStatus": "mock"
+    },
+    {
+      "id": "product-s3-carrot",
+      "storeId": "mock-store-3",
+      "sourceId": "mock-source-3",
+      "externalId": "synthetic-carrot",
+      "name": "Zanahoria (producto ficticio)",
+      "ingredientId": "carrot",
+      "package": {
+        "amount": 500,
+        "unit": "g"
+      },
+      "sourceUrl": null,
+      "isSynthetic": true,
+      "branchId": "mock-store-3-branch-1",
+      "ingredientMatchStatus": "mock"
+    },
+    {
+      "id": "product-s3-potato",
+      "storeId": "mock-store-3",
+      "sourceId": "mock-source-3",
+      "externalId": "synthetic-potato",
+      "name": "Papa (producto ficticio)",
+      "ingredientId": "potato",
+      "package": {
+        "amount": 1000,
+        "unit": "g"
+      },
+      "sourceUrl": null,
+      "isSynthetic": true,
+      "branchId": "mock-store-3-branch-1",
+      "ingredientMatchStatus": "mock"
+    }
+  ],
+  "priceObservations": [
+    {
+      "id": "mock-s1-rice",
+      "productId": "product-s1-rice",
+      "sourceId": "mock-source-1",
+      "capturedAt": "2026-11-15T18:00:00Z",
+      "currency": "CRC",
+      "priceCrc": 1450,
+      "promotion": null,
+      "reviewStatus": "mock",
+      "eligibleForEstimate": true,
+      "isSynthetic": true,
+      "sourceUrl": null,
+      "captureMethod": "synthetic",
+      "branchId": "mock-store-1-branch-1"
+    },
+    {
+      "id": "mock-s1-beans",
+      "productId": "product-s1-beans",
+      "sourceId": "mock-source-1",
+      "capturedAt": "2026-11-15T18:00:00Z",
+      "currency": "CRC",
+      "priceCrc": 950,
+      "promotion": null,
+      "reviewStatus": "mock",
+      "eligibleForEstimate": true,
+      "isSynthetic": true,
+      "sourceUrl": null,
+      "captureMethod": "synthetic",
+      "branchId": "mock-store-1-branch-1"
+    },
+    {
+      "id": "mock-s1-egg",
+      "productId": "product-s1-egg",
+      "sourceId": "mock-source-1",
+      "capturedAt": "2026-11-15T18:00:00Z",
+      "currency": "CRC",
+      "priceCrc": 1400,
+      "promotion": null,
+      "reviewStatus": "mock",
+      "eligibleForEstimate": true,
+      "isSynthetic": true,
+      "sourceUrl": null,
+      "captureMethod": "synthetic",
+      "branchId": "mock-store-1-branch-1"
+    },
+    {
+      "id": "mock-s1-onion",
+      "productId": "product-s1-onion",
+      "sourceId": "mock-source-1",
+      "capturedAt": "2026-11-15T18:00:00Z",
+      "currency": "CRC",
+      "priceCrc": 800,
+      "promotion": null,
+      "reviewStatus": "mock",
+      "eligibleForEstimate": true,
+      "isSynthetic": true,
+      "sourceUrl": null,
+      "captureMethod": "synthetic",
+      "branchId": "mock-store-1-branch-1"
+    },
+    {
+      "id": "mock-s1-pasta",
+      "productId": "product-s1-pasta",
+      "sourceId": "mock-source-1",
+      "capturedAt": "2026-11-15T18:00:00Z",
+      "currency": "CRC",
+      "priceCrc": 900,
+      "promotion": null,
+      "reviewStatus": "mock",
+      "eligibleForEstimate": true,
+      "isSynthetic": true,
+      "sourceUrl": null,
+      "captureMethod": "synthetic",
+      "branchId": "mock-store-1-branch-1"
+    },
+    {
+      "id": "mock-s1-tomato",
+      "productId": "product-s1-tomato",
+      "sourceId": "mock-source-1",
+      "capturedAt": "2026-11-15T18:00:00Z",
+      "currency": "CRC",
+      "priceCrc": 950,
+      "promotion": null,
+      "reviewStatus": "mock",
+      "eligibleForEstimate": true,
+      "isSynthetic": true,
+      "sourceUrl": null,
+      "captureMethod": "synthetic",
+      "branchId": "mock-store-1-branch-1"
+    },
+    {
+      "id": "mock-s1-cheese",
+      "productId": "product-s1-cheese",
+      "sourceId": "mock-source-1",
+      "capturedAt": "2026-11-15T18:00:00Z",
+      "currency": "CRC",
+      "priceCrc": 1900,
+      "promotion": null,
+      "reviewStatus": "mock",
+      "eligibleForEstimate": true,
+      "isSynthetic": true,
+      "sourceUrl": null,
+      "captureMethod": "synthetic",
+      "branchId": "mock-store-1-branch-1"
+    },
+    {
+      "id": "mock-s1-chicken",
+      "productId": "product-s1-chicken",
+      "sourceId": "mock-source-1",
+      "capturedAt": "2026-11-15T18:00:00Z",
+      "currency": "CRC",
+      "priceCrc": 2600,
+      "promotion": null,
+      "reviewStatus": "mock",
+      "eligibleForEstimate": true,
+      "isSynthetic": true,
+      "sourceUrl": null,
+      "captureMethod": "synthetic",
+      "branchId": "mock-store-1-branch-1"
+    },
+    {
+      "id": "mock-s1-carrot",
+      "productId": "product-s1-carrot",
+      "sourceId": "mock-source-1",
+      "capturedAt": "2026-11-15T18:00:00Z",
+      "currency": "CRC",
+      "priceCrc": 700,
+      "promotion": null,
+      "reviewStatus": "mock",
+      "eligibleForEstimate": true,
+      "isSynthetic": true,
+      "sourceUrl": null,
+      "captureMethod": "synthetic",
+      "branchId": "mock-store-1-branch-1"
+    },
+    {
+      "id": "mock-s1-potato",
+      "productId": "product-s1-potato",
+      "sourceId": "mock-source-1",
+      "capturedAt": "2026-11-15T18:00:00Z",
+      "currency": "CRC",
+      "priceCrc": 1250,
+      "promotion": null,
+      "reviewStatus": "mock",
+      "eligibleForEstimate": true,
+      "isSynthetic": true,
+      "sourceUrl": null,
+      "captureMethod": "synthetic",
+      "branchId": "mock-store-1-branch-1"
+    },
+    {
+      "id": "mock-s2-rice",
+      "productId": "product-s2-rice",
+      "sourceId": "mock-source-2",
+      "capturedAt": "2026-11-05T18:00:00Z",
+      "currency": "CRC",
+      "priceCrc": 1600,
+      "promotion": null,
+      "reviewStatus": "mock",
+      "eligibleForEstimate": true,
+      "isSynthetic": true,
+      "sourceUrl": null,
+      "captureMethod": "synthetic",
+      "branchId": "mock-store-2-branch-1"
+    },
+    {
+      "id": "mock-s2-beans",
+      "productId": "product-s2-beans",
+      "sourceId": "mock-source-2",
+      "capturedAt": "2026-11-05T18:00:00Z",
+      "currency": "CRC",
+      "priceCrc": 850,
+      "promotion": null,
+      "reviewStatus": "mock",
+      "eligibleForEstimate": true,
+      "isSynthetic": true,
+      "sourceUrl": null,
+      "captureMethod": "synthetic",
+      "branchId": "mock-store-2-branch-1"
+    },
+    {
+      "id": "mock-s2-egg",
+      "productId": "product-s2-egg",
+      "sourceId": "mock-source-2",
+      "capturedAt": "2026-11-05T18:00:00Z",
+      "currency": "CRC",
+      "priceCrc": 1500,
+      "promotion": null,
+      "reviewStatus": "mock",
+      "eligibleForEstimate": true,
+      "isSynthetic": true,
+      "sourceUrl": null,
+      "captureMethod": "synthetic",
+      "branchId": "mock-store-2-branch-1"
+    },
+    {
+      "id": "mock-s2-onion",
+      "productId": "product-s2-onion",
+      "sourceId": "mock-source-2",
+      "capturedAt": "2026-11-05T18:00:00Z",
+      "currency": "CRC",
+      "priceCrc": 750,
+      "promotion": null,
+      "reviewStatus": "mock",
+      "eligibleForEstimate": true,
+      "isSynthetic": true,
+      "sourceUrl": null,
+      "captureMethod": "synthetic",
+      "branchId": "mock-store-2-branch-1"
+    },
+    {
+      "id": "mock-s2-pasta",
+      "productId": "product-s2-pasta",
+      "sourceId": "mock-source-2",
+      "capturedAt": "2026-11-05T18:00:00Z",
+      "currency": "CRC",
+      "priceCrc": 1050,
+      "promotion": null,
+      "reviewStatus": "mock",
+      "eligibleForEstimate": true,
+      "isSynthetic": true,
+      "sourceUrl": null,
+      "captureMethod": "synthetic",
+      "branchId": "mock-store-2-branch-1"
+    },
+    {
+      "id": "mock-s2-tomato",
+      "productId": "product-s2-tomato",
+      "sourceId": "mock-source-2",
+      "capturedAt": "2026-11-05T18:00:00Z",
+      "currency": "CRC",
+      "priceCrc": 1000,
+      "promotion": null,
+      "reviewStatus": "mock",
+      "eligibleForEstimate": true,
+      "isSynthetic": true,
+      "sourceUrl": null,
+      "captureMethod": "synthetic",
+      "branchId": "mock-store-2-branch-1"
+    },
+    {
+      "id": "mock-s2-cheese",
+      "productId": "product-s2-cheese",
+      "sourceId": "mock-source-2",
+      "capturedAt": "2026-11-05T18:00:00Z",
+      "currency": "CRC",
+      "priceCrc": 1800,
+      "promotion": null,
+      "reviewStatus": "mock",
+      "eligibleForEstimate": true,
+      "isSynthetic": true,
+      "sourceUrl": null,
+      "captureMethod": "synthetic",
+      "branchId": "mock-store-2-branch-1"
+    },
+    {
+      "id": "mock-s2-chicken",
+      "productId": "product-s2-chicken",
+      "sourceId": "mock-source-2",
+      "capturedAt": "2026-11-05T18:00:00Z",
+      "currency": "CRC",
+      "priceCrc": 2500,
+      "promotion": null,
+      "reviewStatus": "mock",
+      "eligibleForEstimate": true,
+      "isSynthetic": true,
+      "sourceUrl": null,
+      "captureMethod": "synthetic",
+      "branchId": "mock-store-2-branch-1"
+    },
+    {
+      "id": "mock-s2-carrot",
+      "productId": "product-s2-carrot",
+      "sourceId": "mock-source-2",
+      "capturedAt": "2026-11-05T18:00:00Z",
+      "currency": "CRC",
+      "priceCrc": 650,
+      "promotion": null,
+      "reviewStatus": "mock",
+      "eligibleForEstimate": true,
+      "isSynthetic": true,
+      "sourceUrl": null,
+      "captureMethod": "synthetic",
+      "branchId": "mock-store-2-branch-1"
+    },
+    {
+      "id": "mock-s2-potato",
+      "productId": "product-s2-potato",
+      "sourceId": "mock-source-2",
+      "capturedAt": "2026-11-05T18:00:00Z",
+      "currency": "CRC",
+      "priceCrc": 1150,
+      "promotion": null,
+      "reviewStatus": "mock",
+      "eligibleForEstimate": true,
+      "isSynthetic": true,
+      "sourceUrl": null,
+      "captureMethod": "synthetic",
+      "branchId": "mock-store-2-branch-1"
+    },
+    {
+      "id": "mock-s3-rice",
+      "productId": "product-s3-rice",
+      "sourceId": "mock-source-3",
+      "capturedAt": "2026-11-15T18:00:00Z",
+      "currency": "CRC",
+      "priceCrc": 1500,
+      "promotion": null,
+      "reviewStatus": "mock",
+      "eligibleForEstimate": true,
+      "isSynthetic": true,
+      "sourceUrl": null,
+      "captureMethod": "synthetic",
+      "branchId": "mock-store-3-branch-1"
+    },
+    {
+      "id": "mock-s3-beans",
+      "productId": "product-s3-beans",
+      "sourceId": "mock-source-3",
+      "capturedAt": "2026-11-15T18:00:00Z",
+      "currency": "CRC",
+      "priceCrc": 1000,
+      "promotion": null,
+      "reviewStatus": "mock",
+      "eligibleForEstimate": true,
+      "isSynthetic": true,
+      "sourceUrl": null,
+      "captureMethod": "synthetic",
+      "branchId": "mock-store-3-branch-1"
+    },
+    {
+      "id": "mock-s3-egg",
+      "productId": "product-s3-egg",
+      "sourceId": "mock-source-3",
+      "capturedAt": "2026-11-15T18:00:00Z",
+      "currency": "CRC",
+      "priceCrc": 1350,
+      "promotion": null,
+      "reviewStatus": "mock",
+      "eligibleForEstimate": true,
+      "isSynthetic": true,
+      "sourceUrl": null,
+      "captureMethod": "synthetic",
+      "branchId": "mock-store-3-branch-1"
+    },
+    {
+      "id": "mock-s3-onion",
+      "productId": "product-s3-onion",
+      "sourceId": "mock-source-3",
+      "capturedAt": "2026-11-15T18:00:00Z",
+      "currency": "CRC",
+      "priceCrc": 850,
+      "promotion": null,
+      "reviewStatus": "mock",
+      "eligibleForEstimate": true,
+      "isSynthetic": true,
+      "sourceUrl": null,
+      "captureMethod": "synthetic",
+      "branchId": "mock-store-3-branch-1"
+    },
+    {
+      "id": "mock-s3-pasta",
+      "productId": "product-s3-pasta",
+      "sourceId": "mock-source-3",
+      "capturedAt": "2026-11-15T18:00:00Z",
+      "currency": "CRC",
+      "priceCrc": 950,
+      "promotion": null,
+      "reviewStatus": "mock",
+      "eligibleForEstimate": true,
+      "isSynthetic": true,
+      "sourceUrl": null,
+      "captureMethod": "synthetic",
+      "branchId": "mock-store-3-branch-1"
+    },
+    {
+      "id": "mock-s3-tomato",
+      "productId": "product-s3-tomato",
+      "sourceId": "mock-source-3",
+      "capturedAt": "2026-11-15T18:00:00Z",
+      "currency": "CRC",
+      "priceCrc": 900,
+      "promotion": null,
+      "reviewStatus": "mock",
+      "eligibleForEstimate": true,
+      "isSynthetic": true,
+      "sourceUrl": null,
+      "captureMethod": "synthetic",
+      "branchId": "mock-store-3-branch-1"
+    },
+    {
+      "id": "mock-s3-cheese",
+      "productId": "product-s3-cheese",
+      "sourceId": "mock-source-3",
+      "capturedAt": "2026-11-15T18:00:00Z",
+      "currency": "CRC",
+      "priceCrc": 2000,
+      "promotion": null,
+      "reviewStatus": "mock",
+      "eligibleForEstimate": true,
+      "isSynthetic": true,
+      "sourceUrl": null,
+      "captureMethod": "synthetic",
+      "branchId": "mock-store-3-branch-1"
+    },
+    {
+      "id": "mock-s3-carrot",
+      "productId": "product-s3-carrot",
+      "sourceId": "mock-source-3",
+      "capturedAt": "2026-11-15T18:00:00Z",
+      "currency": "CRC",
+      "priceCrc": 750,
+      "promotion": null,
+      "reviewStatus": "mock",
+      "eligibleForEstimate": true,
+      "isSynthetic": true,
+      "sourceUrl": null,
+      "captureMethod": "synthetic",
+      "branchId": "mock-store-3-branch-1"
+    },
+    {
+      "id": "mock-s3-potato",
+      "productId": "product-s3-potato",
+      "sourceId": "mock-source-3",
+      "capturedAt": "2026-11-15T18:00:00Z",
+      "currency": "CRC",
+      "priceCrc": 1200,
+      "promotion": null,
+      "reviewStatus": "mock",
+      "eligibleForEstimate": true,
+      "isSynthetic": true,
+      "sourceUrl": null,
+      "captureMethod": "synthetic",
+      "branchId": "mock-store-3-branch-1"
+    }
+  ],
+  "branches": [
+    {
+      "id": "mock-store-1-branch-1",
+      "storeId": "mock-store-1",
+      "name": "Sucursal de ejemplo",
+      "region": null
+    },
+    {
+      "id": "mock-store-2-branch-1",
+      "storeId": "mock-store-2",
+      "name": "Sucursal de ejemplo",
+      "region": null
+    },
+    {
+      "id": "mock-store-3-branch-1",
+      "storeId": "mock-store-3",
+      "name": "Sucursal de ejemplo",
+      "region": null
+    }
+  ]
+}
