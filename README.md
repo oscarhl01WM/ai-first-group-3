@@ -21,5 +21,5 @@ Open `http://localhost:8000/apps/web/`. Serve the repository root so the page ca
 - [Product context](docs/product-context.md): problem and journeys.
 - [Scope and requirements](docs/scope.md): MVP boundaries and acceptance criteria.
 - [Architecture](docs/architecture.md): component model and unresolved technology choices.
-- [MVP planning](docs/plans/mvp-planning.md): proposed implementation plan.
+- [MVP planning](docs/plans/mvp-planning.md): approved phased implementation plan; unresolved product and technology choices remain explicit decision gates.
 - [Codex project context](AGENTS.md): repository guidance and decisions requiring review.

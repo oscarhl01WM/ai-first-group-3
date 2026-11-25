@@ -15,22 +15,22 @@ The product definition is documented in [docs/product-context.md](docs/product-c
 - docs/architecture.md — architecture and design.
 - apps/web/ — dependency-free frontend prototype; no production API is implemented.
 - data/mock/ — synthetic recipe/product fixtures and v1 JSON Schemas; see its README before changing data shapes.
-- docs/plans/ — a plan location named by the supplied structure; the directory and an approved plan are not present yet.
-- docs/decisions/ — a decision-record location named by the supplied structure; the directory and an ADR are not present yet.
-- .agents/skills/: team skills for Codex.
+- docs/plans/mvp-planning.md — approved phased implementation plan; choices explicitly marked pending or unresolved still require team review.
+- docs/decisions/ — not created yet; use for team-approved decision records when decisions are made.
+- .agents/skills/ — repository workflows: create-feature-plan, create-pr, pr-code-review, pr-triage, and set-up-and-validate-the-monorepo.
 
-The supplied monorepo example also names package.json, bun.lock, apps/api, and packages/contracts. These are not present in the repository and have not been initialized. The frontend prototype uses no package manager.
+The supplied monorepo example also names package.json, bun.lock, apps/api, and packages/contracts. They are not present. The approved plan treats API and shared contracts as target or conditional structure; do not choose the unresolved stack or initialize a package manager without the M0 decision. The frontend prototype uses no package manager.
 
 ## Development and validation commands
 
-No package manifest, lockfile, API source, or automated validation scripts are present yet. The frontend is served as static files from the repository root; see README.md. Do not assume a production framework or API runtime until the team decides.
+From the repository root, the README documents `python3 -m http.server 8000` (or Ruby WEBrick as a fallback) to serve the static frontend at `http://localhost:8000/apps/web/`. No automated validation scripts, package manifest, lockfile, or API source are present. Do not assume a production framework or API runtime until the team decides.
 
 ## Conventions and source of truth
 
 - Keep project statements within the user-approved definition in the project documents. Distinguish explicit requirements from assumptions and unresolved questions.
 - Treat supermarket prices as estimates. The definition identifies web scraping as the price source but does not name supermarkets, URLs, or collection details.
 - Do not silently resolve the conflicting frontend and API stack descriptions recorded in docs/architecture.md.
-- The supplied structure names docs/plans/ for approved or current plans. No approved plan exists in the repository yet; once one is approved, consult that plan and record its actual path here.
+- The approved plan is [docs/plans/mvp-planning.md](docs/plans/mvp-planning.md). Its proposed defaults, optional components, and unresolved choices remain subject to the review gates stated in the plan.
 - No additional formatting, branch, commit, or test conventions are established in the repository at this time.
 
 ## Decisions requiring human review
@@ -41,6 +41,6 @@ No package manifest, lockfile, API source, or automated validation scripts are p
 - Clarify whether appliance availability is an input or requirement; it appears in the described current process but not in the objective or functional requirements.
 - The prototype compares weekly budget to whole-package checkout cost and displays leftovers; confirm whether the team wants pantry stock input later. Production ranking/substitution logic still needs a team decision.
 - Confirm how the budget objective is evaluated when estimated prices make the total exceed budget; the definition calls for suggestions/substitutions but does not define an optimization method.
-- Use the corresponding skills in .agents/skills/: set-up-and-validate-monorepo, create-feature-plan, record-adr, pr-code-review, pr-triage y create-pr.
+- Use the repository skills in `.agents/skills/`: `set-up-and-validate-the-monorepo`, `create-feature-plan`, `create-pr`, `pr-code-review`, and `pr-triage`.
 
 Do not add technical components, data sources, or product requirements while these questions are unresolved. Update this context when the team explicitly approves decisions or when setup commands become verifiable.

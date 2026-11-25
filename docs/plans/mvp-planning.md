@@ -1,15 +1,15 @@
 # Munch CR MVP: product and engineering plan
 
-**Status:** Proposed for team review; not an approved implementation plan.
+**Status:** Approved implementation plan. Approval recorded 2026-11-25.
 
 **Planning date:** 2026-11-17.
-**Purpose:** Give a three-person team a practical route from the current documentation to a small Costa Rica MVP. Decisions and targets below are recommendations until the team confirms them.
+**Purpose:** Give a three-person team a practical route from the current documentation to a small Costa Rica MVP. This plan and its phased approach are approved. Options explicitly marked proposed, pending confirmation, optional, or unresolved remain decision gates; approval of the plan does not select a technology stack, data source, or product behavior where the document calls for team confirmation.
 
 ## 1. Repository assessment
 
-The inspected repository contains [README](../../README.md), [project instructions](../../AGENTS.md), and the [product context](../product-context.md), [scope](../scope.md), and [architecture](../architecture.md). The file inventory revealed no application source, package manifest, lockfile, tests, CI configuration, deployment setup, or existing plan directory. No development or validation commands are established. Git status could not be inspected because the machine lacks the selected Apple developer command-line tools; untracked or changed status is therefore unknown.
+As of 2026-11-25, the repository contains [README](../../README.md), [project instructions](../../AGENTS.md), the [product context](../product-context.md), [scope](../scope.md), [architecture](../architecture.md), this plan, a static frontend prototype in `apps/web/`, synthetic fixtures and v1 schemas in `data/mock/`, and team skills in `.agents/skills/`. There is no production API, package manifest, lockfile, automated test suite, CI configuration, or deployment setup. The README documents Python 3 and Ruby commands for serving the static prototype; no automated validation command is established. The repository also has no `docs/decisions/` directory yet.
 
-The product definition, user journey, scope, and conceptual frontend/API/recipe/pricing/shopping-list boundaries can be reused. Everything executable, the recipe and price datasets, source permissions, deployment, and test infrastructure remain to be established. The diagram names React/Vite and Node/Express; the monorepo notes name Vike/React/TypeScript and possibly Bun/Hono and shared Zod contracts. Neither is an installed stack. Do not represent either as an existing decision.
+The static frontend and synthetic fixtures support exploration and data-contract work. Production planning and pricing behavior, reviewed recipe and price datasets, source permissions, deployment, and automated test infrastructure remain to be established. The diagram names React/Vite and Node/Express; the monorepo notes name Vike/React/TypeScript and possibly Bun/Hono and shared Zod contracts. Neither is an installed stack. Do not represent either as an existing decision.
 
 ## 2. Product scope, assumptions, and decisions
 
@@ -129,9 +129,9 @@ Validate types, enum values, lengths, positive budgets and upper bounds server-s
 
 Deploy a single API and static frontend on a simple managed host with a durable managed relational database if needed. CI should run agreed checks and migrations against test data before deployment. Hosting provider, budget, Costa Rica latency, uptime, access controls and data residency are unresolved; choose only after confirming team constraints. Expose liveness and readiness separately; log structured request IDs, timing, status, catalog version and ingestion outcome without raw inputs. Track request errors/latency, generation completion, incomplete comparison rate, observations by freshness, ingestion failures and source coverage. Send a simple alert to the assigned operator on repeated import failure, unhealthy service or inadequate fresh coverage; establish on-call ownership and a manual recovery checklist. Pilot thresholds and frequency are team decisions.
 
-## 11. Proposed repository structure
+## 11. Repository structure
 
-`[existing]` reflects inspected files; all others are proposals, including this current draft. The structure follows the supplied monorepo outline without committing the team to the unresolved stack.
+`[existing]` reflects the inspected repository. The target structure below is part of this approved plan, while entries explicitly labeled proposed or optional remain conditional on the stated decisions. It follows the supplied monorepo outline without committing the team to the unresolved stack.
 
 ```text
 README.md                         [existing]
@@ -140,7 +140,7 @@ docs/
   product-context.md              [existing]
   scope.md                        [existing]
   architecture.md                 [existing]
-  plans/mvp-planning.md           [current proposed plan]
+  plans/mvp-planning.md           [approved implementation plan]
   decisions/                      [proposed when decisions are recorded]
 apps/
   web/                            [current: static frontend prototype]
@@ -159,7 +159,7 @@ Three roles are rotating responsibilities, not separate services: **A: experienc
 
 | Milestone | Goal, deliverables and dependencies | Parallel work and integration | Checkable exit / risks |
 |---|---|---|---|
-| M0: discovery and decisions | Confirm meal semantics, restrictions, appliances, budget basis, stack/host, data rights and first source candidates; define sample recipes, units, API examples, stale policy and acceptance scenarios. Depends on this draft's review. | A tests a paper journey; B coordinates stack/contract decisions and example calculation; C audits 2–3 candidate sources and drafts data dictionary. Agree on units, IDs and one end-to-end example before implementation. | Signed decisions and source review for each candidate; sample scenario reconciles recipes, packages and total; blocked automated sources are identified with fallback. No approval of scraping inferred from a robots file. |
+| M0: discovery and decisions | Confirm meal semantics, restrictions, appliances, budget basis, stack/host, data rights and first source candidates; define sample recipes, units, API examples, stale policy and acceptance scenarios. Depends on execution of this approved plan. | A tests a paper journey; B coordinates stack/contract decisions and example calculation; C audits 2–3 candidate sources and drafts data dictionary. Agree on units, IDs and one end-to-end example before implementation. | Signed decisions and source review for each candidate; sample scenario reconciles recipes, packages and total; blocked automated sources are identified with fallback. No approval of scraping inferred from a robots file. |
 | M1: vertical slice with synthetic data | Minimal app/API, curated synthetic fixtures, three-meal flow, aggregation and single-store calculation. Depends on M0 decisions. | A builds inputs/results; B builds calculation/API; C prepares fixtures and import shape. Integrate contract stub first, then one real end-to-end scenario mid-milestone; all review arithmetic. | Demo reproduces agreed calculation, package rounding, and explicit incomplete/error state; automated checks run in chosen environment. Fixture values cannot be presented as actual retailer data. |
 | M2: catalog and comparison | Reviewed recipes, restrictions/equipment, 2–3 store source records, matching/import and complete/incomplete comparisons; permitted, traceable observations. Depends on M1 contract and source review. | A handles data quality states; B extends generation/comparison; C owns catalog, ingestion and review. Agree adapter schema and freshness semantics first; integrate each source incrementally, then inspect full provenance. | Three to five eligible recipes work for defined scenarios; complete stores use whole packages; missing/stale cases are visible. Source gaps or lack of permitted automation trigger manual fallback and a documented FR-08 release decision. |
 | M3: budget adjustments and hardening | Search/ranking, substitutions, accessible Spanish journey, tests, operations and pilot deployment. Depends on reviewed mappings and M2 comparisons. | A owns usability/accessibility; B budget logic and end-to-end integration; C source monitoring, deployment and restore exercise. Integrate adjustments before full journey checks; all review failure scenarios. | Demonstrate within, over, incomplete, no-match and source-failure states; restrictions respected; no unqualified stale totals; chosen health, logging, backup and checks work. Limited catalog and price availability remain risks. |
@@ -184,7 +184,7 @@ Work that should remain sequential: agree source rights before automated collect
 
 **First milestone: M0 discovery and decisions. Definition of done:** team records the decisions above, agrees a worked calculation and contract, reviews candidate source restrictions and identifies a viable path or explicit blocker for the scraping requirement, assigns owners, and approves the M1 acceptance scenarios. No production implementation is required for M0.
 
-**First concrete tasks after review:** (1) A sketches the five-meal and incomplete-price screens and tests the proposed appliance input; (2) B leads a 30–45 minute decision session and writes the shared worked example and contract; (3) C identifies candidate stores, records the current terms/robots/access and reviews one representative package mapping per ingredient; (4) all three reconcile a single shopping-list and store-total example and record decisions before any parallel coding.
+**First concrete tasks after M0 decisions:** (1) A sketches the five-meal and incomplete-price screens and tests the proposed appliance input; (2) B leads a 30–45 minute decision session and writes the shared worked example and contract; (3) C identifies candidate stores, records the current terms/robots/access and reviews one representative package mapping per ingredient; (4) all three reconcile a single shopping-list and store-total example and record decisions before any parallel coding.
 
 **Confirm before or during M0:** frontend and API choice; weekly weekday selection and recipe repetition policy; optional appliance scope; supported restriction list and ingredient review; budget and no-fit ranking; freshness/coverage thresholds; source rights and whether manual-only data changes FR-08; hosting, retention and operational owner.
 
